@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use App\Models\Pibheader;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Outgoing extends Model
+{
+    use HasFactory;
+    protected $guarded = [];
+
+    public function pibheader(){
+        return $this->hasMany(Pibheader::class); 
+    } 
+}

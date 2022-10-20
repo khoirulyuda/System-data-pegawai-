@@ -1,0 +1,12 @@
+<!-- Pibco import -->
+'Car' => $row[1],
+            'ContNo' => $row[2],
+            'ContUkur' => $row[3],
+            'ContTipe' => $row[4],
+
+<!-- Pibcon migration -->
+$table->string('Car')->nullable();
+            $table->string('ContNo')->nullable();
+            $table->string('ContUkur')->nullable();
+            $table->string('ContTipe')->nullable();
+

@@ -14,6 +14,7 @@
         />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 
         <title>CRUD LARAVEL 8</title>
     </head>
@@ -44,31 +45,31 @@
                 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Import Data</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-        <form action="/importexcel" method="POST" enctype="multipart/form-data">
-        @csrf
-        <div class="modal-body">
-                <div class="form-group">
-                    <input type="file" name="file" required>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Import Data</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <form action="/importexcel" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="modal-body">
+                                <div class="form-group">
+                                    <input type="file" name="file" required>
+                                </div>
+                                
+                        </div>
+                            
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Import</button>
+                        </div>
+                    </div>
+                    </form>
                 </div>
-                
-        </div>
-            
-        <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Import</button>
-        </div>
-     </div>
-     </form>
-  </div>
-</div>
+                </div>
             </div>
 
 

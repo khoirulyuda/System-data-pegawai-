@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h1>Data Pegawai</h1>
+<h1>Data Mossi</h1>
 
 <table id="customers">
   <tr>
